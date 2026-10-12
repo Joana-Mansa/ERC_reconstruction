@@ -1,0 +1,184 @@
+{
+  "synthetic": true,
+  "seed": 20261012,
+  "participants": 600,
+  "split_subjects": {
+    "train": 360,
+    "calibration": 120,
+    "test": 120
+  },
+  "models": {
+    "SYNTHETIC_caudate_volume": {
+      "mean_coefficients": [
+        6.972104437145621,
+        -0.4140075922994262,
+        -0.05595733924467444
+      ],
+      "log_sd_coefficients": [
+        0.2568775406146792,
+        -0.9039688815985064
+      ],
+      "calibration_bins": [
+        {
+          "age": 26.576008172918325,
+          "sd_ml": 0.3741253902106148,
+          "n": 20
+        },
+        {
+          "age": 34.64683455746417,
+          "sd_ml": 0.2610809183493589,
+          "n": 20
+        },
+        {
+          "age": 45.47399440090608,
+          "sd_ml": 0.45828165423629186,
+          "n": 20
+        },
+        {
+          "age": 59.63690787856633,
+          "sd_ml": 0.4618204235833135,
+          "n": 20
+        },
+        {
+          "age": 70.22955312772608,
+          "sd_ml": 0.5098158219778047,
+          "n": 20
+        },
+        {
+          "age": 83.64853114598101,
+          "sd_ml": 0.4975285162330044,
+          "n": 20
+        }
+      ],
+      "supported_age_range": [
+        20.550129431096476,
+        89.80159193996982
+      ]
+    },
+    "SYNTHETIC_hippocampal_volume": {
+      "mean_coefficients": [
+        7.49002829239473,
+        -0.7021329550339526,
+        -0.236787882711618
+      ],
+      "log_sd_coefficients": [
+        0.2529009012239879,
+        -0.5137159032614425
+      ],
+      "calibration_bins": [
+        {
+          "age": 26.576008172918325,
+          "sd_ml": 0.5736100214319368,
+          "n": 20
+        },
+        {
+          "age": 34.64683455746417,
+          "sd_ml": 0.5244811040642015,
+          "n": 20
+        },
+        {
+          "age": 45.47399440090608,
+          "sd_ml": 0.44959586121062595,
+          "n": 20
+        },
+        {
+          "age": 59.63690787856633,
+          "sd_ml": 0.5845178164366076,
+          "n": 20
+        },
+        {
+          "age": 70.22955312772608,
+          "sd_ml": 0.9005057832930156,
+          "n": 20
+        },
+        {
+          "age": 83.64853114598101,
+          "sd_ml": 0.7636965157817347,
+          "n": 20
+        }
+      ],
+      "supported_age_range": [
+        20.550129431096476,
+        89.80159193996982
+      ]
+    },
+    "SYNTHETIC_thalamic_volume": {
+      "mean_coefficients": [
+        13.957767495834087,
+        -1.0689208829881336,
+        -0.26769839775797744
+      ],
+      "log_sd_coefficients": [
+        0.20964218763041784,
+        -0.013959735544205406
+      ],
+      "calibration_bins": [
+        {
+          "age": 26.576008172918325,
+          "sd_ml": 0.6643262222790529,
+          "n": 20
+        },
+        {
+          "age": 34.64683455746417,
+          "sd_ml": 1.2777498875012585,
+          "n": 20
+        },
+        {
+          "age": 45.47399440090608,
+          "sd_ml": 0.9101591121151215,
+          "n": 20
+        },
+        {
+          "age": 59.63690787856633,
+          "sd_ml": 1.0796313873916248,
+          "n": 20
+        },
+        {
+          "age": 70.22955312772608,
+          "sd_ml": 0.8781308863336975,
+          "n": 20
+        },
+        {
+          "age": 83.64853114598101,
+          "sd_ml": 1.4460568511459497,
+          "n": 20
+        }
+      ],
+      "supported_age_range": [
+        20.550129431096476,
+        89.80159193996982
+      ]
+    }
+  },
+  "test_metrics": [
+    {
+      "region": "SYNTHETIC_caudate_volume",
+      "evaluated_test_rows": 117,
+      "withheld_extrapolation_rows": 3,
+      "rmse_ml": 0.5149413225346473,
+      "z_mean": 0.054059057999696555,
+      "z_sd": 1.1397481393240676,
+      "coverage_95": 0.905982905982906
+    },
+    {
+      "region": "SYNTHETIC_hippocampal_volume",
+      "evaluated_test_rows": 117,
+      "withheld_extrapolation_rows": 3,
+      "rmse_ml": 0.6800467363148858,
+      "z_mean": 0.004638362928543011,
+      "z_sd": 1.0387078623029904,
+      "coverage_95": 0.9658119658119658
+    },
+    {
+      "region": "SYNTHETIC_thalamic_volume",
+      "evaluated_test_rows": 117,
+      "withheld_extrapolation_rows": 3,
+      "rmse_ml": 0.9946042753971569,
+      "z_mean": -0.05609769427437659,
+      "z_sd": 0.959891931251648,
+      "coverage_95": 0.9572649572649573
+    }
+  ],
+  "interval": "Approximate conditional individual 95% interval: mean \u00b11.96 SD. Gaussian assumption. Not a regression mean confidence interval; parameter uncertainty omitted.",
+  "clinical_validity": "None. Simulated cross-sectional data with arbitrary volume scale and age effects."
+}

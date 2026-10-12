@@ -1,0 +1,15 @@
+{
+  "seed": 20261012,
+  "subjects": 24,
+  "shape": [
+    64,
+    72,
+    64
+  ],
+  "normalization_max_error": 0.0,
+  "good_mean_entropy_roi_support_bits": 0.35791516304016113,
+  "poor_mean_entropy_same_roi_support_bits": 0.5946954488754272,
+  "synthetic": true,
+  "biological_interpretation": "None; shape variation and registration errors were simulated",
+  "maximum_probability_tie_rule": "first label in [0,1,2,3]; ties are not additional evidence"
+}

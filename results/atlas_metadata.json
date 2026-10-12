@@ -1,0 +1,71 @@
+{
+  "shape": [
+    182,
+    218,
+    182
+  ],
+  "affine": [
+    [
+      -1.0,
+      0.0,
+      0.0,
+      90.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      -126.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      -72.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "voxel_spacing_mm": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "orientation": [
+    "L",
+    "A",
+    "S"
+  ],
+  "storage_dtype": "int16",
+  "spatial_unit": "mm",
+  "qform_code": 4,
+  "sform_code": 4,
+  "voxel_volume_mm3": 1.0,
+  "nonbackground_regions": 496,
+  "expected_regions": 496,
+  "expected_count_passed": true,
+  "hemisphere_counts": {
+    "left": 248,
+    "right": 248
+  },
+  "matched_bilateral_pairs": 244,
+  "unpaired_base_labels": [
+    68,
+    209,
+    303,
+    365,
+    409,
+    444,
+    506,
+    567
+  ],
+  "nonbackground_volume_ml": 1578.096,
+  "validation_issue_rows": 8,
+  "atlas_sha256": "0fd00a035070d26cf848c6bb4b36d409ab1bb355c9186f0e1faba6793d54bdab",
+  "lut_sha256": "f2c2353fdf703a2afb6c4c3026383aeb8c8cd922ca83fd9d3c5add90adcd6896",
+  "meaning": "Hard labels. Volumes belong to the MNI template, not individual patients."
+}

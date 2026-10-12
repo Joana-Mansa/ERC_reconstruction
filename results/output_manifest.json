@@ -1,0 +1,200 @@
+{
+  "tests": {
+    "tests": 31,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "files": [
+    {
+      "path": "results/atlas_metadata.json",
+      "sha256": "e2de6d7dd2475c664982cb37a6e0b572fb215e38272bc13da2c4fdbfa03023a7",
+      "bytes": 1209
+    },
+    {
+      "path": "results/atlas_summary.md",
+      "sha256": "a83d5802c39897c6158b68eb0bb65774b88adac4c442ab9a2408ac52d97b1010",
+      "bytes": 1253
+    },
+    {
+      "path": "results/environment_inventory.json",
+      "sha256": "717cb3ec0032c5aea449ccdfc7fb51147099455824613a6ae6a45c8341e773da",
+      "bytes": 767
+    },
+    {
+      "path": "results/figures/atlas_axial.png",
+      "sha256": "566bd879a684edb233a18059f7d4b474b17d8fe31f54f636a51e9f00ff0ff1df",
+      "bytes": 49717
+    },
+    {
+      "path": "results/figures/atlas_coronal.png",
+      "sha256": "379ec3a784631090ec32a95aa8fdc450689b74030c66ecc785ae3615b557a969",
+      "bytes": 47375
+    },
+    {
+      "path": "results/figures/atlas_sagittal.png",
+      "sha256": "21c0ca5b2430419c24d7b8d933487ebfec45abc1d0009349b2120dcc59d619da",
+      "bytes": 49076
+    },
+    {
+      "path": "results/figures/atlas_T1_overlay.png",
+      "sha256": "c9283b15824fbc33085204963d04b99dde4749c48c6f5e24c2b653ff6770c0f2",
+      "bytes": 317697
+    },
+    {
+      "path": "results/figures/atlas_three_view.png",
+      "sha256": "433ca5abace04d8bce7323976d2092215c59abaee9da6649462dbc1a19d5fee1",
+      "bytes": 131105
+    },
+    {
+      "path": "results/figures/largest_20_regions.png",
+      "sha256": "0d7c0eb656a408f2a1551d0edea05405000e6d935e22236f7400d5ac741c430c",
+      "bytes": 168738
+    },
+    {
+      "path": "results/figures/left_right_volumes.png",
+      "sha256": "8eee2460cc638a3ca38b7b5b4bb7dd6bb500b1c85e8c30ca124434852a79fc95",
+      "bytes": 114727
+    },
+    {
+      "path": "results/figures/region_volume_histogram.png",
+      "sha256": "1a1ea5cb073e6522abee3f735d8b4d32d885d289a50200144a8acec29516ed6e",
+      "bytes": 47548
+    },
+    {
+      "path": "results/figures/selected_structures.png",
+      "sha256": "28fa23091a4e55ffde8ade7b5fbab64eb0edc9f1226bd6e8908bb428a9c7eec3",
+      "bytes": 602888
+    },
+    {
+      "path": "results/figures/SYNTHETIC_age_trajectories.png",
+      "sha256": "6f5b3405547696a920dd82908060a873ff30ec75f1654989b0a00d9527a52102",
+      "bytes": 358086
+    },
+    {
+      "path": "results/figures/SYNTHETIC_deviation_scores.png",
+      "sha256": "2633354c0e1e571bad1e9d915a2fff79f76f92395266086ab3b3f0faa7a9a687",
+      "bytes": 205670
+    },
+    {
+      "path": "results/figures/SYNTHETIC_multiple_subjects.png",
+      "sha256": "3701a0f4687c6b7a6992a47f1bc91ca694102178adcd86e56034a65c11359996",
+      "bytes": 113758
+    },
+    {
+      "path": "results/figures/SYNTHETIC_probability_demo.png",
+      "sha256": "9b1d79e44b9323a71316cf6bfc554cf0848937ca48df88011a54fbcefab94580",
+      "bytes": 173258
+    },
+    {
+      "path": "results/figures/SYNTHETIC_registration_uncertainty.png",
+      "sha256": "f8abf3862cec71335e2406196ae7655b8ffa4a3651451d4d73831945eeac8c63",
+      "bytes": 103630
+    },
+    {
+      "path": "results/logs/atlas_final_run.log",
+      "sha256": "53d981e4c5901150b0d0a87f923ca3eef92d1b88e5427d394433a9a910b749e6",
+      "bytes": 41
+    },
+    {
+      "path": "results/logs/fresh_download_check.log",
+      "sha256": "9c92b013394c87d39f9ca51cd235cd891c3de65b55792119a86490e498cc2643",
+      "bytes": 46
+    },
+    {
+      "path": "results/logs/pytest.xml",
+      "sha256": "66f0216fe5b301d07c0189f1996839ae9db2f56b1d95a9f47006974c02b23cd4",
+      "bytes": 3447
+    },
+    {
+      "path": "results/logs/pytest_run.log",
+      "sha256": "cdd0c4b4dcdffe94eccbfbf678e925105457e706ec5a68a5ec1c2c05b0fdd8dd",
+      "bytes": 184
+    },
+    {
+      "path": "results/logs/research_run.log",
+      "sha256": "b3d52e991d1566af370bee44a3a210990a6d0ddfa2981b82676f3f6afb94f98b",
+      "bytes": 1529
+    },
+    {
+      "path": "results/official_preflight.json",
+      "sha256": "1ef841824299f6de4d6866b9ec72b2bd4fe47598418fc8765b85669d35458b1d",
+      "bytes": 357
+    },
+    {
+      "path": "results/reference_alignment.json",
+      "sha256": "d0e3af744cbefd1527153dee38a19f898ef4fdf21bf664c4793d54e3c21493bb",
+      "bytes": 658
+    },
+    {
+      "path": "results/SYNTHETIC_normative_summary.json",
+      "sha256": "b1b33b19eba38a390a1a04f24a95bf6ca060187593b0f56a0085407ce6a8b2c7",
+      "bytes": 4738
+    },
+    {
+      "path": "results/synthetic_probability_summary.json",
+      "sha256": "10c506ff3fb27f2f76ccce86326c20af4ea0a3b487363fc36316c11e1a98b9e5",
+      "bytes": 467
+    },
+    {
+      "path": "results/tables/all_label_volumes.csv",
+      "sha256": "aa9892a64c4a40a71d06aa7baa4b883707fbb307187cb487f757a0435024ed4d",
+      "bytes": 67681
+    },
+    {
+      "path": "results/tables/hemisphere_pairs.csv",
+      "sha256": "cd8f128f3c9f31d15591179862566a87cf7d0200b29cbee86b37f271c7066f08",
+      "bytes": 14245
+    },
+    {
+      "path": "results/tables/label_validation_report.csv",
+      "sha256": "1435196f95ce5ceedaad426036643fe0dad91f180ee883010fdaf7ade9aff99f",
+      "bytes": 12154
+    },
+    {
+      "path": "results/tables/region_volume_statistics.csv",
+      "sha256": "4014b4992252aceb9b389c285da02adf6cf9182ca4aabfdd8392d2447a89e36f",
+      "bytes": 157
+    },
+    {
+      "path": "results/tables/region_volumes.csv",
+      "sha256": "24e2c50a24eaedfd339cfbf1024eaf9ad0830efccc56115feea32d4029ba3457",
+      "bytes": 67587
+    },
+    {
+      "path": "results/tables/selected_structure_labels.csv",
+      "sha256": "92d35380eb6d88d8a1f75a2664cb8f838ee7c3aa6e5249383d6e6bd2bfd9f69f",
+      "bytes": 27635
+    },
+    {
+      "path": "results/tables/SYNTHETIC_age_trajectories.csv",
+      "sha256": "ef49fdf2231f01add3b8c85fcb1fc2a18a0e3aaf792b1c72e8d278db0c55c250",
+      "bytes": 74754
+    },
+    {
+      "path": "results/tables/SYNTHETIC_example_individuals.csv",
+      "sha256": "70a7ff4a05554947cc14436f639df2808492e5eb55346084ae8ba5ac2b534136",
+      "bytes": 3651
+    },
+    {
+      "path": "results/tables/SYNTHETIC_normative_test_metrics.csv",
+      "sha256": "3c17de5e79171b2e7fbfeff0ea22f1e0bdca6376da2bc80323a9ccb220ec27f0",
+      "bytes": 421
+    },
+    {
+      "path": "results/tables/SYNTHETIC_subject_splits.csv",
+      "sha256": "fc7447641d5a4c00f0d293a5e77a40f44d78776ef10659f275bc911cc7596139",
+      "bytes": 16233
+    },
+    {
+      "path": "results/tables/SYNTHETIC_test_age_bin_qc.csv",
+      "sha256": "a24e322cace1c19e571a10b150c2957c39b8246ba97030dd1f2e540183513b9d",
+      "bytes": 1313
+    },
+    {
+      "path": "results/tables/SYNTHETIC_test_deviation_scores.csv",
+      "sha256": "0a5739d817a83f0313cca97e515ba233e4259d211b2609f72e3c0693c9ff7d53",
+      "bytes": 82869
+    }
+  ]
+}

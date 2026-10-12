@@ -1,4 +1,65 @@
-# NextBrain reconstruction pipeline
+# NextBrain research reproduction
+
+Start with [START_HERE.md](START_HERE.md), [the executed research report](NEXTBRAIN_RESEARCH_REPORT.md) and [PROJECT_STATUS.md](PROJECT_STATUS.md).
+
+This fork preserves the original reconstruction pipeline below and adds an independent, CPU-compatible Python project. It analyzes the public MNI hard-label atlas and keeps synthetic probability/age experiments explicitly separate from public-data results. It does not claim a completed official patient segmentation or reproduce every result of the original paper.
+
+## Quick start
+
+Python 3.10–3.13 (executed here with 3.10). Windows PowerShell:
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+.\.venv\Scripts\python.exe scripts/run_research.py download --reference
+.\.venv\Scripts\python.exe scripts/run_research.py all
+.\.venv\Scripts\python.exe -m pytest -q --junitxml=results/logs/pytest.xml
+.\.venv\Scripts\python.exe scripts/run_research.py report
+```
+
+Linux:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+python scripts/run_research.py download --reference
+python scripts/run_research.py all
+python -m pytest -q --junitxml=results/logs/pytest.xml
+python scripts/run_research.py report
+```
+
+`--reference` downloads an optional 187 MB official FSL standard-data package, verifies its checksum and extracts only the matching MNI152 T1. Skip it for an atlas-only analysis. `all` uses pinned atlas files, generates CSV/JSON/PNG/NIfTI results and checks official CPU prerequisites; it never starts FreeSurfer inference. Existing source files are not modified. Repeated runs overwrite only this project's generated outputs.
+
+The script entry point works without installing the historical reconstruction environment. For an optional console command, `pip install -e .` installs only `nextbrain_research`, then `nextbrain-research all` is equivalent. The direct dependency pins and fully resolved `requirements-lock.txt` are separate so the tested environment can be reconstructed.
+
+## Project layout
+
+```text
+src/nextbrain_research/  new analysis package
+scripts/run_research.py portable analysis entry point
+tests/                  physical volume, label integrity, probability and leakage tests
+docs/                   registration, data/license review, CPU setup, research proposal
+data/source_atlas/      untouched external atlas (ignored in Git)
+data/reference/         external MNI T1 (ignored in Git)
+data/synthetic/         explicitly simulated datasets and NIfTIs
+data/processed/         reserved for later processed data (ignored in Git)
+results/figures/        generated publication-resolution PNGs
+results/tables/         volumes, validation and synthetic model scores
+results/logs/           execution and test evidence
+```
+
+Use actions `atlas`, `probability`, `normative`, `preflight` or `report` independently. `--root PATH` redirects the project inputs/results. `official --input ... --output ... --threads 4` is a later CPU-only official run after installing prerequisites; see [the exact setup workflow](docs/official_segmentation_setup.md). Source probability maps have their own opt-in loader, not a fabricated conversion from hard labels.
+
+## Interpretation and licensing
+
+Regional counts are **template volumes**, not patient measurements. Synthetic datasets contain no real participants and have no clinical evidential value. Statistical prediction intervals describe estimated individual variability, not confidence in the regression mean. The new code follows the retained GPL-3.0 license; third-party data retain their own terms. Source downloads, licenses and environment files are excluded from Git. See [the provenance and license review](docs/data_and_license_review.md).
+
+The atlas, probability demonstration and age models were executed on Windows. Linux commands are provided but the full Linux analysis pipeline has not been executed here. Original histology reconstruction remains a distinct, much larger workflow.
+
+---
+
+# Original NextBrain reconstruction pipeline
 
 This repository contains the scripts for 3D histology reconstruction.
 

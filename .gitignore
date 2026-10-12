@@ -1,3 +1,20 @@
 *nii.gz
 *png
 TODO.txt
+
+# Independent research environment and external assets
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+data/source_atlas/
+data/reference/
+data/download_cache/
+data/processed/
+results/official/
+*.partial
+license.txt
+# Original rule ignored every PNG/NIfTI. Publish only our generated outputs.
+!results/figures/*.png
+!data/synthetic/SYNTHETIC*.nii.gz

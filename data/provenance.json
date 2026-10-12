@@ -1,0 +1,41 @@
+{
+  "assets": [
+    {
+      "path": "data/source_atlas/nextbrain_wholebrain_MNI152_1mm.nii.gz",
+      "url": "https://raw.githubusercontent.com/compneurobilbao/nextbrain-mni-atlas/27826640aa5d1644e135d8be99ae25194352428c/nextbrain_wholebrain_MNI152_1mm.nii.gz",
+      "commit": "27826640aa5d1644e135d8be99ae25194352428c",
+      "sha256": "0fd00a035070d26cf848c6bb4b36d409ab1bb355c9186f0e1faba6793d54bdab",
+      "canonical_sha256": "0fd00a035070d26cf848c6bb4b36d409ab1bb355c9186f0e1faba6793d54bdab",
+      "bytes": 586329,
+      "license": "No explicit LICENSE in pinned MNI atlas repository; raw files excluded from publication"
+    },
+    {
+      "path": "data/source_atlas/nextbrain_wholebrain_MNI152_1mm_lut.txt",
+      "url": "https://raw.githubusercontent.com/compneurobilbao/nextbrain-mni-atlas/27826640aa5d1644e135d8be99ae25194352428c/nextbrain_wholebrain_MNI152_1mm_lut.txt",
+      "commit": "27826640aa5d1644e135d8be99ae25194352428c",
+      "sha256": "f2c2353fdf703a2afb6c4c3026383aeb8c8cd922ca83fd9d3c5add90adcd6896",
+      "canonical_sha256": "607b55566ec38c9af2a6b6fa29f014265a5a80025cb89c301ccd59ccc9f4f78c",
+      "bytes": 28183,
+      "license": "No explicit LICENSE in pinned MNI atlas repository; raw files excluded from publication"
+    },
+    {
+      "path": "data/source_atlas/README.md",
+      "url": "https://raw.githubusercontent.com/compneurobilbao/nextbrain-mni-atlas/27826640aa5d1644e135d8be99ae25194352428c/README.md",
+      "commit": "27826640aa5d1644e135d8be99ae25194352428c",
+      "sha256": "f9bae95e66dfe5a355a4a85f7182fb04869aa501f3c7e003c671cfed664eeeb6",
+      "canonical_sha256": "16e1ebde935d140223bd8893f7bf52146ed939967b10c7c467212cb5046ecfbd",
+      "bytes": 4780,
+      "license": "No explicit LICENSE in pinned MNI atlas repository; raw files excluded from publication"
+    },
+    {
+      "path": "data/reference/MNI152_T1_1mm.nii.gz",
+      "url": "https://fsl.fmrib.ox.ac.uk/fsldownloads/fslconda/public/noarch/fsl-data_standard-2208.0-0.tar.bz2",
+      "archive_sha256": "2faefb4d366b6427cbf4e5c3e54c63c040ec9bcfe11b1f10848f89a1571b828a",
+      "sha256": "d1f03e160c2548592a01d98d44d7e0ffa8a8ef58bc9b07d26369e214ba170edb",
+      "bytes": 10963667,
+      "license": "FSL noncommercial research terms; see https://fsl.fmrib.ox.ac.uk/fsl/docs/license.html",
+      "role": "MNI152 population-average T1 reference; not a patient"
+    }
+  ],
+  "retrieval_date": "2026-10-12"
+}

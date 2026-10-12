@@ -1,0 +1,7 @@
+numpy==2.2.6
+pandas==2.3.3
+scipy==1.15.3
+nibabel==5.3.2
+matplotlib==3.10.7
+scikit-learn==1.7.2
+pytest==8.4.2

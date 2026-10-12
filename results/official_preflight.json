@@ -1,0 +1,12 @@
+{
+  "operating_system": "Windows",
+  "command_available": false,
+  "license_file_present": false,
+  "atlas_present": false,
+  "requested_device": "cpu",
+  "blockers": [
+    "Official FreeSurfer command not on PATH",
+    "No license at FS_LICENSE or FREESURFER_HOME/license.txt",
+    "Original atlas_simplified probability files unavailable"
+  ]
+}

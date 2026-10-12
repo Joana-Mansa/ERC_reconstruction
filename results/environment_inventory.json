@@ -1,0 +1,20 @@
+{
+  "checked_date": "2026-10-12",
+  "host_os": "Windows",
+  "host_ram_bytes": 16802918400,
+  "gpu_name": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+  "gpu_memory_mib": 6144,
+  "wsl_distributions_checked": [
+    "Ubuntu",
+    "Ubuntu-24.04"
+  ],
+  "wsl_ram_mb": 7763,
+  "freesurfer_command_on_windows_path": false,
+  "freesurfer_command_on_checked_wsl_paths": false,
+  "standard_wsl_installation_directories_present": false,
+  "license_present_at_checked_locations": false,
+  "original_probability_atlas_present": false,
+  "selected_official_device": "cpu",
+  "system_installation_performed": false,
+  "scope": "PATH, environment variables and /usr/local/freesurfer, /opt/freesurfer, user-home freesurfer locations; not an exhaustive disk search"
+}
