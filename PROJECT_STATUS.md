@@ -8,7 +8,7 @@ Phases 1–4: isolated Python environment, immutable atlas acquisition with prov
 
 - `python scripts/run_research.py all`: atlas, synthetic probability, synthetic age modelling and official CPU preflight completed.
 - `python scripts/run_research.py download --reference`: optional official FSL reference acquisition; overlay available in saved results: **True**.
-- `python -m pytest -q --junitxml=results/logs/pytest.xml`: 31 tests; 0 failures, 0 errors, 0 skipped. See results/logs/pytest.xml.
+- `python -m pytest -q --junitxml=results/logs/pytest.xml`: 32 tests; 0 failures, 0 errors, 0 skipped. See results/logs/pytest.xml.
 - Source sparse loader: fixture-tested only, not executed against the full original atlas.
 - Official `mri_histo_atlas_segment_fireants`: not executed because prerequisites are absent.
 

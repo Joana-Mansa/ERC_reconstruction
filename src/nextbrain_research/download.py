@@ -51,8 +51,13 @@ def download(root, reference=False):
         if name in EXPECTED_SHA256 and source_checksum(path) != EXPECTED_SHA256[name]:
             raise ValueError(f"Pinned atlas checksum mismatch: {name}")
         key = path.relative_to(root).as_posix()
-        if key in assets and assets[key]["sha256"] != sha256(path):
-            raise ValueError(f"Source changed: {key}")
+        if key in assets:
+            # Published provenance may originate from a CRLF Windows checkout.
+            # Use canonical text hashes across checkouts, actual bytes for binary.
+            recorded = assets[key].get("canonical_sha256", assets[key]["sha256"])
+            observed = source_checksum(path) if "canonical_sha256" in assets[key] else sha256(path)
+            if recorded != observed:
+                raise ValueError(f"Source changed: {key}")
         assets[key] = dict(path=key, url=BASE + name, commit=ATLAS_COMMIT, sha256=sha256(path), canonical_sha256=source_checksum(path),
                            bytes=path.stat().st_size, license="No explicit LICENSE in pinned MNI atlas repository; raw files excluded from publication")
     if reference:

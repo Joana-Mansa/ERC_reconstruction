@@ -1,6 +1,6 @@
 {
   "tests": {
-    "tests": 31,
+    "tests": 32,
     "failures": 0,
     "errors": 0,
     "skipped": 0
@@ -97,18 +97,23 @@
       "bytes": 41
     },
     {
+      "path": "results/logs/cross_checkout_check.log",
+      "sha256": "d59e379d59292f2c4d503299b5b1fc9d702f8fa65b6bdd4af80faecfddef2bea",
+      "bytes": 45
+    },
+    {
       "path": "results/logs/fresh_download_check.log",
       "sha256": "9c92b013394c87d39f9ca51cd235cd891c3de65b55792119a86490e498cc2643",
       "bytes": 46
     },
     {
       "path": "results/logs/pytest.xml",
-      "sha256": "66f0216fe5b301d07c0189f1996839ae9db2f56b1d95a9f47006974c02b23cd4",
-      "bytes": 3447
+      "sha256": "58af33d287d45a7dd53055cc0901a4400ca8789f11915ca0197810fa23b7b515",
+      "bytes": 3571
     },
     {
       "path": "results/logs/pytest_run.log",
-      "sha256": "cdd0c4b4dcdffe94eccbfbf678e925105457e706ec5a68a5ec1c2c05b0fdd8dd",
+      "sha256": "67021a489287ae3b8907329c241e333b76f06a1907f7e5f70f96026d8e891282",
       "bytes": 184
     },
     {

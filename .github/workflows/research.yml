@@ -32,13 +32,16 @@ jobs:
           python-version: '3.10'
           cache: pip
       - run: python -m pip install -r requirements.txt
-      - run: python scripts/run_research.py all
-      - run: python -m pytest -q --junitxml=results/logs/pytest.xml
-      - run: python scripts/run_research.py report
+      - run: python scripts/run_research.py download
+      # Use an empty result root so no committed figures can stand in for a
+      # freshly reproduced output. The optional FSL overlay is excluded in CI.
+      - run: python scripts/run_research.py all --root data/processed/ci_reproduction
+      - run: python -m pytest -q --junitxml=data/processed/ci_reproduction/results/logs/pytest.xml
+      - run: python scripts/run_research.py report --root data/processed/ci_reproduction
       - uses: actions/upload-artifact@v4
         with:
           name: research-${{ matrix.os }}
           path: |
-            results/
-            NEXTBRAIN_RESEARCH_REPORT.md
-            PROJECT_STATUS.md
+            data/processed/ci_reproduction/results/
+            data/processed/ci_reproduction/NEXTBRAIN_RESEARCH_REPORT.md
+            data/processed/ci_reproduction/PROJECT_STATUS.md

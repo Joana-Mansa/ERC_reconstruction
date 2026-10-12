@@ -149,7 +149,7 @@ Coverage is imperfect, especially for the simulated caudate; passing implementat
 - Synthetic shape/volume variation has no clinical or biological evidential status.
 - The age model omits sex, head size and scanner effects, uses a small calibration set and ignores parameter uncertainty.
 - Source licenses are recorded separately; downloading public files does not establish unrestricted redistribution rights.
-- Tests cover 31 tests; 0 failures, 0 errors, 0 skipped. See results/logs/pytest.xml. They check computational invariants, not clinical validity. Windows execution was verified; a complete Linux pipeline run has not yet been verified.
+- Tests cover 32 tests; 0 failures, 0 errors, 0 skipped. See results/logs/pytest.xml. They check computational invariants, not clinical validity. Windows execution was verified; a complete Linux pipeline run has not yet been verified.
 
 ## 14. Possible extensions for a University of Girona PhD
 
