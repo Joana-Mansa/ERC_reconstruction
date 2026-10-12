@@ -55,7 +55,7 @@ Use actions `atlas`, `probability`, `normative`, `preflight` or `report` indepen
 
 Regional counts are **template volumes**, not patient measurements. Synthetic datasets contain no real participants and have no clinical evidential value. Statistical prediction intervals describe estimated individual variability, not confidence in the regression mean. The new code follows the retained GPL-3.0 license; third-party data retain their own terms. Source downloads, licenses and environment files are excluded from Git. See [the provenance and license review](docs/data_and_license_review.md).
 
-The atlas, probability demonstration and age models were executed on Windows. Linux commands are provided but the full Linux analysis pipeline has not been executed here. Original histology reconstruction remains a distinct, much larger workflow.
+The atlas, probability demonstration and age models were executed locally on Windows and independently reproduced in [Ubuntu and Windows CI](https://github.com/Joana-Mansa/ERC_reconstruction/actions/runs/38233075420). CI uses empty output folders, so committed figures cannot substitute for regenerated outputs; it excludes the optional large FSL reference download. Original histology reconstruction remains a distinct, much larger workflow.
 
 ---
 

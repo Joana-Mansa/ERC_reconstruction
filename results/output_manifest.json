@@ -17,6 +17,11 @@
       "bytes": 1253
     },
     {
+      "path": "results/ci_validation.json",
+      "sha256": "6d3935925e2fc338d4af460eed67e3ac87b77aedbba080ff6dcead7ded14bc19",
+      "bytes": 657
+    },
+    {
       "path": "results/environment_inventory.json",
       "sha256": "717cb3ec0032c5aea449ccdfc7fb51147099455824613a6ae6a45c8341e773da",
       "bytes": 767
@@ -105,6 +110,11 @@
       "path": "results/logs/fresh_download_check.log",
       "sha256": "9c92b013394c87d39f9ca51cd235cd891c3de65b55792119a86490e498cc2643",
       "bytes": 46
+    },
+    {
+      "path": "results/logs/fresh_reproduction_run.log",
+      "sha256": "b3d52e991d1566af370bee44a3a210990a6d0ddfa2981b82676f3f6afb94f98b",
+      "bytes": 1529
     },
     {
       "path": "results/logs/pytest.xml",

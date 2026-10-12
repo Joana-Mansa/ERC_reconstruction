@@ -10,6 +10,7 @@ Phases 1–4: isolated Python environment, immutable atlas acquisition with prov
 - `python scripts/run_research.py download --reference`: optional official FSL reference acquisition; overlay available in saved results: **True**.
 - `python -m pytest -q --junitxml=results/logs/pytest.xml`: 32 tests; 0 failures, 0 errors, 0 skipped. See results/logs/pytest.xml.
 - Source sparse loader: fixture-tested only, not executed against the full original atlas.
+- Independent platform validation: The core pipeline was independently reproduced on Ubuntu and Windows in [GitHub Actions](https://github.com/Joana-Mansa/ERC_reconstruction/actions/runs/38233075420) at commit `772def8`. The optional FSL T1 overlay was verified locally on Windows only. This recorded check applies to that commit.
 - Official `mri_histo_atlas_segment_fireants`: not executed because prerequisites are absent.
 
 ## Downloaded data
@@ -49,7 +50,7 @@ Observed 496 regions, 244 bilateral pairs, 8 unpaired label rows, no missing LUT
 - Official CPU inference: Official FreeSurfer command not on PATH; No license at FS_LICENSE or FREESURFER_HOME/license.txt; Original atlas_simplified probability files unavailable. WSL checks did not find a standard installation. System installation and license registration were outside authorized execution rules.
 - Full original probabilistic-atlas analysis and histological reconstruction: source files not downloaded; loader alone is not a reproduction.
 - Real-cohort normative validation: no suitable directly verified no-authentication age-plus-regional-volume table obtained during the bounded feasibility search. Synthetic demonstration used by explicit task fallback.
-- Linux end-to-end validation: implementation is portable but was executed on Windows only.
+- Optional FSL reference/overlay was reproduced locally on Windows; the core atlas and synthetic experiments have the platform validation recorded above.
 - GitHub publication status is recorded separately in `docs/publication_status.md` after an actual push attempt.
 
 ## Reproduce

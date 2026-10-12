@@ -25,6 +25,12 @@ def generate_report(root):
     tests_path = root / "results/logs/pytest.xml"
     test_message = "Not recorded; run pytest before claiming validation."
     test_summary = None
+    ci_path = root / "results/ci_validation.json"
+    linux_note = "Windows execution was verified; a complete Linux pipeline run has not yet been verified."
+    if ci_path.exists():
+        ci = json.loads(ci_path.read_text(encoding="utf-8"))
+        if ci.get("conclusion") == "success" and all(job.get("conclusion") == "success" for job in ci["jobs"]):
+            linux_note = f"The core pipeline was independently reproduced on Ubuntu and Windows in [GitHub Actions]({ci['url']}) at commit `{ci['commit'][:7]}`. The optional FSL T1 overlay was verified locally on Windows only. This recorded check applies to that commit."
     if tests_path.exists():
         tree = ET.parse(tests_path).getroot()
         suites = list(tree.iter("testsuite"))
@@ -162,7 +168,7 @@ Coverage is imperfect, especially for the simulated caudate; passing implementat
 - Synthetic shape/volume variation has no clinical or biological evidential status.
 - The age model omits sex, head size and scanner effects, uses a small calibration set and ignores parameter uncertainty.
 - Source licenses are recorded separately; downloading public files does not establish unrestricted redistribution rights.
-- Tests cover {test_message} They check computational invariants, not clinical validity. Windows execution was verified; a complete Linux pipeline run has not yet been verified.
+- Tests cover {test_message} They check computational invariants, not clinical validity. {linux_note}
 
 ## 14. Possible extensions for a University of Girona PhD
 
@@ -189,6 +195,7 @@ Phases 1–4: isolated Python environment, immutable atlas acquisition with prov
 - `python scripts/run_research.py download --reference`: optional official FSL reference acquisition; overlay available in saved results: **{overlay}**.
 - `python -m pytest -q --junitxml=results/logs/pytest.xml`: {test_message}
 - Source sparse loader: fixture-tested only, not executed against the full original atlas.
+- Independent platform validation: {linux_note}
 - Official `mri_histo_atlas_segment_fireants`: not executed because prerequisites are absent.
 
 ## Downloaded data
@@ -210,7 +217,7 @@ Observed {m['nonbackground_regions']} regions, {m['matched_bilateral_pairs']} bi
 - Official CPU inference: {'; '.join(preflight['blockers'])}. WSL checks did not find a standard installation. System installation and license registration were outside authorized execution rules.
 - Full original probabilistic-atlas analysis and histological reconstruction: source files not downloaded; loader alone is not a reproduction.
 - Real-cohort normative validation: no suitable directly verified no-authentication age-plus-regional-volume table obtained during the bounded feasibility search. Synthetic demonstration used by explicit task fallback.
-- Linux end-to-end validation: implementation is portable but was executed on Windows only.
+- Optional FSL reference/overlay was reproduced locally on Windows; the core atlas and synthetic experiments have the platform validation recorded above.
 - GitHub publication status is recorded separately in `docs/publication_status.md` after an actual push attempt.
 
 ## Reproduce

@@ -1,0 +1,21 @@
+{
+  "run_id": 38233075420,
+  "url": "https://github.com/Joana-Mansa/ERC_reconstruction/actions/runs/38233075420",
+  "commit": "772def8c98a59512449f633954b63d110cbe9b0a",
+  "status": "completed",
+  "conclusion": "success",
+  "verified_date": "2026-10-12",
+  "scope": "Fresh atlas, synthetic probability and normative analysis, tests and report. Optional FSL T1 overlay not reproduced in CI.",
+  "jobs": [
+    {
+      "name": "research (windows-latest)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "name": "research (ubuntu-latest)",
+      "status": "completed",
+      "conclusion": "success"
+    }
+  ]
+}
